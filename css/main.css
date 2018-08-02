@@ -570,3 +570,89 @@ p.q-label {
   text-indent:0px;
   color:  #ff3500;
 }
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 24px;
+  }
+  .footer-center {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .full-module-items {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 3em;
+    letter-spacing: -3px;
+  }
+
+  h6 {
+    font-size: .8em;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .footer-left {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: -50px;
+  }
+
+  .footer-left img {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer-center {
+    text-align: center;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+
+  .item-description {
+    width: 10
+  }
+
+  .full-module-items {
+    flex-direction: column-reverse;
+  }
+
+  .item-txt {
+    position: relative !important;
+    padding: 0px !important;
+    margin: 0px;
+  }
+
+/* INTERVIEWS */
+  .interview-title {
+    font-size: .8em;
+    margin-bottom: 150px;
+  }
+
+  .full-img {
+    padding: 0px;
+  }
+
+  .qa-block {
+    width: 100%;
+  }
+
+  .question {
+    width: 90%;
+    font-size: 2em;
+  }
+
+  .answer {
+    width: 95%;
+  }
+
+}
