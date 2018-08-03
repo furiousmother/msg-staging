@@ -61,6 +61,16 @@ header {
   margin-top: 25px;
 }
 
+.full-module-int {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+}
+
 #apparel-wrapper {
   background-color: #f89c1c;
   padding: 25px;
@@ -474,13 +484,14 @@ p.footer-txt {
   font-size: 2.7em;
   letter-spacing: -3px;
   line-height: 1em;
-  display: block;
+  display: inline;
 }
 
 .subheadline {
   font-family: 'Neue Haas', sans-serif;
   font-size: 2.5em;
   line-height: 1em;
+  display: inline;
 }
 
 .interview-title {
@@ -534,6 +545,7 @@ p.footer-txt {
   margin: 0 auto;
   margin-bottom: 50px;
   text-align: center;
+  text-indent: 10%;
 }
 
 .answer {
@@ -544,6 +556,7 @@ p.footer-txt {
   margin: 0 auto;
   letter-spacing: .5px;
   padding-right: 30px;
+  text-indent: 10%;
 }
 
 .int-num {
@@ -572,12 +585,16 @@ p.q-label {
   color:  #ff3500;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   html {
     font-size: 24px;
   }
   .footer-center {
     padding-right: 50px;
+  }
+
+  h1.section-title {
+    font-size: 5em;
   }
 
   .answer {
@@ -587,6 +604,18 @@ p.q-label {
   .img-right {
     padding: 0px !important;
   }
+
+  .img-left {
+    padding: 0px !important;
+  }
+
+  .headline {
+    font-size: 2.2em;
+  }
+
+  .subheadline {
+    font-size: 2em;
+  }
 }
 
 @media (max-width: 700px) {
@@ -594,8 +623,21 @@ p.q-label {
     flex-direction: column;
   }
 
+  .img-left {
+    border: 0;
+  }
+
+  .img-right {
+    border: 0;
+  }
+
   h1 {
     font-size: 3em;
+    letter-spacing: -3px;
+  }
+
+  h1.section-title {
+    font-size: 4em;
     letter-spacing: -3px;
   }
 
@@ -632,6 +674,10 @@ p.q-label {
   }
 
   .full-module-items {
+    flex-direction: column;
+  }
+
+  .full-module-int {
     flex-direction: column-reverse;
   }
 
@@ -662,6 +708,37 @@ p.q-label {
 
   .answer {
     width: 95%;
+    padding-right: 0px;
   }
 
+  .headline {
+    font-size: 3.2em;
+  }
+
+  .subheadline {
+    font-size: 3em;
+  }
+
+  .item-txt .item-info {
+    font-size: .75em;
+  }
+
+  p.item-info {
+    padding-right: 0px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 18px;
+  }
+
+  .item-txt .item-info {
+    font-size: 1em;
+  }
+
+  .item-txt-one-2,
+  .item-txt-two-2 {
+    letter-spacing: 0px !important;
+  }
 }
