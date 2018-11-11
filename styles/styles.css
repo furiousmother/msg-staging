@@ -1,0 +1,555 @@
+@font-face {
+  font-family: 'Wremena';
+  src:
+  url('../fonts/Wremena-Light.woff') format('woff'),
+  url('../fonts/Wremena-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Neue Haas';
+  src:
+  url('../fonts/NHaasGroteskDSStd-55Rg.otf');
+}
+
+html {
+  font-size: 32px;
+}
+
+body {
+  font-family: 'Neue Haas';
+  overflow-x: hidden;
+  background-color: #ff3500;
+}
+
+a {
+  text-decoration: none;
+  color: #161616;
+}
+
+a:hover {
+  font-family: "solow";
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -79px;
+  visibility: hidden;
+  margin-top: -1em;
+}
+
+/* TYPOGRAPHY */
+
+h1, h2, h3, h4, h5, h6 {
+  display: inline;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+h1 {
+  font-family: 'Neue Haas', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+h2 {
+  font-family: 'Wremena', serif;
+  font-weight: normal;
+  font-size: 1.6em;
+  letter-spacing: -.02em;
+  line-height: 1em;
+}
+
+h3 {
+  font-family: 'Neue Haas', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+h4 {
+  letter-spacing: .03em;
+  font-weight: inherit;
+}
+
+h5 {
+  font-family: 'Wremena', serif;
+  font-size: 1.1em;
+  letter-spacing: -.02em;
+}
+
+h6 {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-family: 'solow', serif;
+  font-size: .6em;
+  letter-spacing: .05em;
+}
+
+/* HEADER */
+
+header {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #ff3500;
+  position: relative;
+  z-index: 1000;
+  /* box-shadow: 0px 5px 25px red; */
+}
+
+.top-logo img {
+  height: 350px;
+}
+
+.stick {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+.marquee-wrapper {
+  background-color: #ff3500;
+  padding-bottom: 5px;
+}
+
+.marquee {
+  font-family: "solow";
+  display: inline;
+  white-space: nowrap;
+  visibility: hidden;
+  animation: marquee 45s linear infinite;
+}
+
+.marquee-2 {
+  white-space: nowrap;
+  position: relative;
+  animation: marquee 45s linear infinite;
+}
+
+.marquee span {
+}
+
+@keyframes marquee {
+  0% { left: 10%; }
+  100% { left: -200%; }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-indent: none;
+}
+
+.menu li {
+  display: inline;
+}
+
+.product-menu {
+  position: fixed;
+  background-color: #ff3500;
+  width: 100%;
+  padding-top: 2px;
+}
+
+.product-menu li {
+  display: inline;
+}
+
+/* HERO */
+
+.hero {
+  text-align: center;
+  position: relative;
+  background-color: #ff3500;
+  z-index: 1000;
+}
+
+.hero-txt {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel {
+  z-index: -100;
+  margin-bottom: -7px;;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+/* SECTION HEADER */
+
+.headline {
+  height: 200px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+p.title {
+  font-size: 5em;
+  font-family: "Wremena";
+  display: inline;
+  letter-spacing: -.05em;
+}
+
+.section-name {
+  margin-top: .5em;
+}
+
+.left-txt,
+.right-txt {
+  font-size: .5em;
+  display: flex;
+  flex-direction: column;
+  line-height: .4em;
+}
+
+.left-txt {
+  text-align: left;
+}
+
+.right-txt {
+  text-align: right;
+}
+
+.left-top,
+.right-top {
+  position: absolute;
+  top: 0;
+}
+
+.left-bot,
+.right-bot {
+  position: absolute;
+  bottom: 0;
+}
+
+.right-bot,
+.right-top {
+  position: absolute;
+  right: 10px;
+}
+
+/* APPAREL */
+
+.apparel-wrapper {
+  background-color: #f89c1c;
+}
+
+.item-wrap {
+  padding: 0 10px 10px 10px;
+  max-width: px;
+  margin: 0 auto;
+}
+
+.items-two-col,
+.items-three-col {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-stack {
+  flex: 1;
+}
+
+.items-two-col .item-stack:nth-child(1) {
+  padding-right: 10px;
+}
+
+.items-three-col .item-stack:nth-child(1),
+.items-three-col .item-stack:nth-child(2) {
+  padding-right: 10px;
+}
+
+.item-stack img {
+  width: 100%;
+}
+
+.img-txt {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+/* CONVERSATIONS */
+
+.conversations-wrapper {
+  background-color: #161616;
+  color: #ff3500;
+}
+
+.convo-wrap {
+  padding: 0 10px 10px 10px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* TEST */
+.jR3DCarouselGallery,.jR3DCarouselGalleryCustomeTemplate {
+	margin: 0 auto; /* optional - if want to center align */
+}
+
+.jR3DCarouselGalleryCustomeTemplate .captions{
+	position: relative;
+	padding: 4px 0;
+	bottom: 27px;
+	background: #ec1c8e;
+	display:block
+}
+
+.jR3DCarouselGalleryCustomeTemplate a{
+	text-decoration: none;
+}
+
+/* PRODUCTS */
+
+.products-wrap {
+  background-color: #161616;
+  display: flex;
+  padding: 10px;
+}
+
+.left-scroll {
+  flex: 1;
+  margin-top: 39px;
+}
+
+.left-scroll img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.right-fix {
+  flex: 1;
+  color: white;
+  margin-top: 8vh;
+  padding: 10px;
+}
+
+.product-stack {
+  /* background-color: blue; */
+  position: fixed;
+  padding: 20px;
+  padding-right: 3em;
+  height: 100vh;
+}
+
+.price {
+  font-family: 'solow', sans-serif;
+  font-size: .7em;
+}
+
+.product-desc {
+  font-family: 'Wremena', sans-serif;
+  font-size: .75em;
+  letter-spacing: -.02em;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+}
+
+.product-desc p {
+  font-family: 'Wremena', Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.product-name {
+  margin-bottom: 1em;
+}
+
+.buy {
+  margin-top: 1em;
+  font-size: .7em;
+  font-family: 'Neue Haas', serif;
+  letter-spacing: .02em;
+}
+
+.cart-button {
+  margin-top: .9em;
+}
+
+textarea:focus, *:focus, input:focus{
+  outline: none;
+}
+
+/* CONVERSATIONS */
+.convo-hero {
+  background-color: #161616;
+  color: #ff3500;
+  display: flex;
+  /* max-height: 800px; */
+}
+
+.convo-hero-left {
+  flex: 1;
+  margin-left: 20px;
+  margin-top: 60px;
+  position: relative;
+}
+
+.convo-hero-right {
+  flex: 1;
+}
+
+.convo-hero-title {
+  font-size: 2em;
+  line-height: 1em;
+  letter-spacing: -.01em;
+}
+
+.convo-hero-title p {
+  padding: 0;
+  margin: 0;
+}
+
+p.convo-type-1 {
+  font-family: 'Wremena', serif;
+  letter-spacing: -.05em;
+}
+
+p.convo-type-2 {
+  font-size: .9em;
+}
+
+.convo-hero-credits {
+  font-size: 1em;
+  position: absolute;
+  bottom: 25px;
+}
+
+.convo-hero-credits p {
+  padding: 0;
+  margin: 0;
+}
+
+.convo-hero img {
+  width: 100%;
+  margin: -7px;
+  /* max-width: 600px; */
+}
+
+.convo-hero-img {
+  text-align: right;
+}
+
+.convo-hero-img p {
+  font-family: 'Neue Haas', sans-serif;
+  font-size: 2em;
+  letter-spacing: -.05em;
+  margin: 0;
+  position: absolute;
+  top: 45px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.convo-txt-stack p {
+  line-height: 1.2em;
+  display: inline;
+}
+
+.convo-date {
+  font-family: 'solow';
+  font-size: .6em;
+  line-height: 2em;
+}
+
+.convo-caption-1 {
+  font-family: 'Wremena', serif;
+  letter-spacing: -.03em;
+}
+
+.convo-caption-2 {
+  letter-spacing: .02em;
+}
+
+.convo-hero-title p {
+  display: inline;
+}
+
+.convo-wrapper {
+  background-color: lightgray;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pull-quote {
+  font-family: 'Wremena', serif;
+  font-size: 1.5em;
+  letter-spacing: -.03em;
+  line-height: 1.2em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.question p,
+.answer p {
+  display: inline;
+  font-size: .7em;
+}
+
+.question p {
+  letter-spacing: .04em;
+}
+
+.question,
+.answer {
+  line-height: .9em;
+  width: 60%;
+  text-indent: 2em;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.speaker {
+  color: #ff3500;
+  font-family: 'solow';
+}
+
+.question {
+  margin-bottom: .6em;
+  letter-spacing: .02em;
+}
+
+.answer {
+  font-family: 'Wremena', serif;
+  margin-bottom: 1.5em;
+  line-height: .9em;
+  letter-spacing: -.01em;
+}
+
+.img-tilt-1 img {
+  width: 100%;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.img-50 {
+  display: flex;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.img-50-left img,
+.img-50-right img {
+  width: 100%;
+}
+
+.img-50-left,
+.img-50-right {
+  flex: 1;
+}

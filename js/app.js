@@ -3,17 +3,17 @@ $(window).scroll(function() {
   var anchor = $('#scroller-anchor').offset().top;
 
   if (top>anchor) {
-    $('.test').addClass('stick');
-    $('.full-module-top').css('margin-top', '90px');
+    $('.marquee-wrapper').addClass('stick');
+    $('.hero').css('margin-top', '75px');
     $('.marquee').css('position', 'relative');
     $('.marquee').css('visibility', 'visible');
     // $('#masthead').css('display', 'none');
   }
   else {
-    $('.test').removeClass('stick');
+    $('.marquee-wrapper').removeClass('stick');
     $('.marquee').css('visibility', 'hidden');
     // $('#masthead').css('display', 'block');
-    $('.full-module-top').css('margin-top', '0');
+    $('.hero').css('margin-top', '0');
   }
 });
 
