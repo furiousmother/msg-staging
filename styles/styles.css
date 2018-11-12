@@ -18,13 +18,13 @@
   url('../fonts/SoLowItalic-Web.woff2') format('woff2');
 }
 
-@font-face {
+/* @font-face {
   font-family: 'solow';
   src:
   url('../fonts/SoLowRegular-Web.woff') format('woff'),
   url('../fonts/SoLowRegular-Web.woff2') format('woff2');
   font-style: italic;
-}
+} */
 
 html {
   font-size: 32px;
