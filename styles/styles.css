@@ -32,7 +32,7 @@ html {
 
 body {
   font-family: 'Neue Haas';
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   background-color: #ff3500;
   cursor: url('../images/cursors-02.png'), move;
 }
@@ -835,6 +835,10 @@ footer {
 @media (max-width: 800px) {
   body {
     font-size: 24px;
+  }
+
+  .right-fix {
+    margin-top: 8vh;
   }
 
   .question p:nth-child(2) {
