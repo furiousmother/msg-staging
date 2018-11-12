@@ -680,3 +680,117 @@ footer {
     opacity: 0;
   }
 }
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  body {
+    font-size: 24px;
+  }
+
+  .top-logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  p.title {
+    font-size: 3em;
+    line-height: 2.5em;
+  }
+
+  .items-two-col,
+  .items-three-col {
+    flex-direction: column;
+  }
+
+  .items-two-col .item-stack:nth-child(1) {
+    padding-right: 0;
+  }
+
+  .items-three-col .item-stack:nth-child(1),
+  .items-three-col .item-stack:nth-child(2), {
+    padding-right: 0;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .footer-left {
+    margin-bottom: -40px;
+  }
+
+  .footer-center {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .footer-right {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .product-menu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .products-wrap {
+    flex-direction: column-reverse;
+  }
+
+  .product-stack {
+    position: relative;
+    height: auto;
+    padding: 0px;
+  }
+
+  .convo-hero {
+    flex-direction: column;
+  }
+
+  .convo-hero-title {
+    margin-top: .5em;
+    margin-bottom: 2em;
+  }
+
+  .convo-hero-credits {
+    position: relative;
+  }
+
+  .convo-hero-right {
+    position: relative;
+  }
+
+  .convo-hero-right p {
+    position: absolute;
+  }
+
+  .question,
+  .answer {
+    width: 85%;
+    line-height: 1.05em;
+    letter-spacing: 0;
+  }
+
+  .img-50 {
+    flex-direction: column;
+  }
+
+  .pull-quote{
+    width: 95%;
+    font-size: 1.2em;
+    padding-bottom: .4em;
+  }
+
+  .convo-wrapper {
+    padding-top: 1em;
+  }
+
+  .faq {
+    width: 85%;
+    line-height: 1.3em;
+    letter-spacing: 0.03em;
+  }
+}
