@@ -201,7 +201,7 @@ ul {
   position: relative;
   background-color: #ff3500;
   z-index: 1000;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .hero-txt {
