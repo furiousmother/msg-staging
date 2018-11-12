@@ -203,6 +203,7 @@ ul {
   position: relative;
   background-color: #ff3500;
   z-index: 1000;
+  width: 100%;
   overflow-x: hidden;
 }
 
