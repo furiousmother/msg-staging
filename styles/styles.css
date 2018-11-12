@@ -124,6 +124,10 @@ header {
   padding-bottom: 5px;
 }
 
+.marquee span {
+  margin-right: 30px;
+}
+
 .marquee {
   font-family: "solow";
   display: inline;
@@ -181,6 +185,7 @@ ul {
   position: relative;
   background-color: #ff3500;
   z-index: 1000;
+  overflow-x: hidden;
 }
 
 .hero-txt {
@@ -305,6 +310,9 @@ p.title {
 .img-txt {
   text-align: center;
   margin-bottom: 2em;
+  line-height: 1em;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 /* CONVERSATIONS */
@@ -547,7 +555,6 @@ p.convo-type-2 {
 
 .question,
 .answer {
-  line-height: .9em;
   width: 60%;
   text-indent: 2em;
   text-align: left;
@@ -562,6 +569,17 @@ p.convo-type-2 {
 .question {
   margin-bottom: .6em;
   letter-spacing: .02em;
+  line-height: .9em;
+}
+
+/* .answer p:nth-child(2) {
+  display: block;
+  line-height: 1.4em;
+} */
+
+p.question-2 {
+  line-height: inherit;
+  display: block;
 }
 
 .answer {
@@ -730,12 +748,36 @@ footer {
     font-size: 1.8em;
   }
 
+  .product-stack {
+    padding: 10px;
+  }
+
+  p.title {
+    font-size: 4em;
+    line-height: 1.3em;
+  }
+
+  .product-desc {
+    font-size: .7em;
+  }
+
+  .product-name {
+    font-size: .8em;
+  }
+
+  .right-fix {
+    margin-top: 4vh;
+  }
 }
 
 @media (max-width: 1000px) {
   p.title {
     font-size: 3.5em;
     line-height: 1.5em;
+  }
+
+  .product-desc {
+    font-size: .7em;
   }
 
   .convo-hero {
@@ -777,6 +819,10 @@ footer {
 @media (max-width: 800px) {
   body {
     font-size: 24px;
+  }
+
+  .question p:nth-child(2) {
+    line-height: 1.6em;
   }
 
   .top-logo img {
