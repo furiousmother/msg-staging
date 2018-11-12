@@ -8,7 +8,22 @@
 @font-face {
   font-family: 'Neue Haas';
   src:
-  url('../fonts/NHaasGroteskDSStd-55Rg.otf');
+  url('../fonts/NHaasGroteskDSStd-55Rg.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'solow';
+  src:
+  url('../fonts/SoLowItalic-Web.woff') format('woff'),
+  url('../fonts/SoLowItalic-Web.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'solow';
+  src:
+  url('../fonts/SoLowRegular-Web.woff') format('woff'),
+  url('../fonts/SoLowRegular-Web.woff2') format('woff2');
+  font-style: italic;
 }
 
 html {
@@ -35,7 +50,7 @@ a {
 }
 
 a:hover {
-  font-family: "solow";
+  font-family: "solow", sans-serif;
   cursor: url('../images/cursors-01.png'), move;
 }
 
@@ -91,7 +106,7 @@ h6 {
   display: block;
   padding: 0;
   margin: 0;
-  font-family: 'solow', serif;
+  font-family: 'solow', sans-serif;
   font-size: .6em;
   letter-spacing: .05em;
 }
@@ -129,7 +144,7 @@ header {
 }
 
 .marquee {
-  font-family: "solow";
+  font-family: 'solow', sans-serif;
   display: inline;
   white-space: nowrap;
   visibility: hidden;
@@ -509,7 +524,7 @@ p.convo-type-2 {
 }
 
 .convo-date {
-  font-family: 'solow';
+  font-family: 'solow', sans-serif;
   font-size: .6em;
   line-height: 2em;
 }
@@ -563,7 +578,7 @@ p.convo-type-2 {
 
 .speaker {
   color: #ff3500;
-  font-family: 'solow';
+  font-family: 'solow', sans-serif;
 }
 
 .question {
@@ -635,7 +650,7 @@ p.question-2 {
 }
 
 .img-cap {
-  font-family: "solow", serif;
+  font-family: 'solow', sans-serif;
   font-size: .5em;
   margin-top: 5px;
 }
@@ -656,7 +671,7 @@ footer {
   border-right: solid 10% transparent;
   text-align: center;
   font-size: .5em;
-  font-family: "solow";
+  font-family: 'solow', sans-serif;
 }
 
 .footer-center {
