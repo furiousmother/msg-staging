@@ -19,6 +19,7 @@ body {
   font-family: 'Neue Haas';
   overflow-x: hidden;
   background-color: #ff3500;
+  cursor: url('../images/cursors-02.png'), move;
 }
 
 img {
@@ -35,6 +36,7 @@ a {
 
 a:hover {
   font-family: "solow";
+  cursor: url('../images/cursors-01.png'), move;
 }
 
 .anchor {
@@ -263,6 +265,14 @@ p.title {
   background-color: #f89c1c;
 }
 
+.apparel-wrapper img:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  cursor: url('../images/cursors-01.png'), move;
+}
+
 .item-wrap {
   padding: 0 10px 10px 10px;
   max-width: px;
@@ -303,6 +313,15 @@ p.title {
   background-color: #161616;
   color: #ff3500;
 }
+
+.conversations-wrapper img:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  cursor: url('../images/cursors-01.png'), move;
+}
+
 
 .convo-wrap {
   padding: 0 10px 10px 10px;
@@ -392,6 +411,7 @@ p.title {
 
 .cart-button {
   margin-top: .9em;
+  cursor: url('../images/cursors-01.png'), move;
 }
 
 textarea:focus, *:focus, input:focus{
@@ -678,6 +698,24 @@ footer {
 @keyframes blinker {
   50% {
     opacity: 0;
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
   }
 }
 
