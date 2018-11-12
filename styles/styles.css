@@ -417,6 +417,10 @@ textarea:focus, *:focus, input:focus{
   flex: 1;
 }
 
+.convo-hero-right p {
+  animation: blinker 1s linear infinite;
+}
+
 .convo-hero-title {
   font-size: 2em;
   line-height: 1em;
@@ -456,6 +460,8 @@ p.convo-type-2 {
 
 .convo-hero-img {
   text-align: right;
+  padding: 50px;
+  margin-top: 30px;
 }
 
 .convo-hero-img p {
@@ -547,6 +553,7 @@ p.convo-type-2 {
 
 .img-tilt-1 {
   margin-bottom: 2em;
+  padding: 40px;
 }
 
 .img-tilt-1 img {
@@ -568,6 +575,7 @@ p.convo-type-2 {
 .img-50-left,
 .img-50-right {
   flex: 1;
+  padding: 30px;
 }
 
 /* YOUTUBE PLAYLIST */
@@ -665,4 +673,10 @@ footer {
 	100% {
 		opacity: 1;
 	}
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
