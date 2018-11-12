@@ -682,6 +682,59 @@ footer {
 }
 
 /* RESPONSIVE */
+@media (max-width: 1200px) {
+  .question,
+  .answer {
+    width: 70%;
+  }
+
+  .convo-hero-title {
+    font-size: 1.8em;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  p.title {
+    font-size: 3.5em;
+    line-height: 1.5em;
+  }
+
+  .convo-hero {
+    flex-direction: column;
+  }
+
+  .convo-hero-title {
+    margin-top: .5em;
+    margin-bottom: 2em;
+    padding-right: 2em;
+  }
+
+  .convo-hero-credits {
+    position: relative;
+  }
+
+  .convo-hero-right {
+    position: relative;
+  }
+
+  .convo-hero-right img {
+    width: 80%;
+  }
+
+  .convo-hero-img {
+    text-align: center;
+  }
+
+  .convo-hero-right p {
+    position: absolute;
+  }
+
+  .question,
+  .answer {
+    width: 80%;
+  }
+}
 
 @media (max-width: 800px) {
   body {
@@ -689,13 +742,13 @@ footer {
   }
 
   .top-logo img {
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 
   p.title {
-    font-size: 3em;
-    line-height: 2.5em;
+    font-size: 4em;
+    line-height: 1.8em;
   }
 
   .items-two-col,
@@ -712,6 +765,10 @@ footer {
     padding-right: 0;
   }
 
+  .convo-hero-title {
+    padding-right: .5em;
+  }
+
   footer {
     flex-direction: column;
   }
@@ -720,15 +777,25 @@ footer {
     margin-bottom: -40px;
   }
 
+  .footer-left img {
+    max-width: 100px;
+  }
+
   .footer-center {
     padding: 30px;
     text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
   }
 
   .footer-right {
     padding: 10px;
     text-align: center;
     margin-bottom: 2em;
+  }
+
+  .convo-hero-right img {
+    width: 100%;
   }
 
   .product-menu {
@@ -746,32 +813,15 @@ footer {
     padding: 0px;
   }
 
-  .convo-hero {
-    flex-direction: column;
-  }
-
-  .convo-hero-title {
-    margin-top: .5em;
-    margin-bottom: 2em;
-  }
-
-  .convo-hero-credits {
-    position: relative;
-  }
-
-  .convo-hero-right {
-    position: relative;
-  }
-
-  .convo-hero-right p {
-    position: absolute;
-  }
-
   .question,
   .answer {
     width: 85%;
-    line-height: 1.05em;
+    line-height: 1em;
     letter-spacing: 0;
+  }
+
+  .answer p {
+    font-size: .8em;
   }
 
   .img-50 {
@@ -792,5 +842,12 @@ footer {
     width: 85%;
     line-height: 1.3em;
     letter-spacing: 0.03em;
+  }
+}
+
+@media (max-width: 600px) {
+  p.title {
+    font-size: 2.8em;
+    line-height: 2.6em;
   }
 }
