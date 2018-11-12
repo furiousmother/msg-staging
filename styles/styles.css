@@ -21,6 +21,13 @@ body {
   background-color: #ff3500;
 }
 
+img {
+  animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
 a {
   text-decoration: none;
   color: #161616;
@@ -153,6 +160,12 @@ ul {
   background-color: #ff3500;
   width: 100%;
   padding-top: 2px;
+}
+
+.product-menu:hover {
+  transition: background-color 0.5s ease;
+  background-color: #EB008B;
+  /* background-color: #F89C1C; */
 }
 
 .product-menu li {
@@ -532,9 +545,12 @@ p.convo-type-2 {
   letter-spacing: -.01em;
 }
 
+.img-tilt-1 {
+  margin-bottom: 2em;
+}
+
 .img-tilt-1 img {
   width: 100%;
-  margin-bottom: 1em;
   margin-top: 1em;
 }
 
@@ -552,4 +568,101 @@ p.convo-type-2 {
 .img-50-left,
 .img-50-right {
   flex: 1;
+}
+
+/* YOUTUBE PLAYLIST */
+.playlist {
+  overflow:hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  left: 0;
+  height: 0;
+}
+
+.playlist iframe {
+  position: absolute;
+  left: 0;
+  top: -4%;
+  height: 90%;
+  width: 90%;
+  padding: 5%;
+}
+
+.img-cap {
+  font-family: "solow", serif;
+  font-size: .5em;
+  margin-top: 5px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #eb008b;
+  letter-spacing: .5px;
+  width: 100%;
+  height: auto;
+  color: #3a1037;
+  display: flex;
+}
+
+.footer-left {
+  flex: 2;
+  padding: 30px;
+  border-right: solid 10% transparent;
+  text-align: center;
+  font-size: .5em;
+  font-family: "solow";
+}
+
+.footer-center {
+  flex: 4;
+  text-align: left;
+  font-size: .7em;
+  line-height: 1.2em;
+  border-right: solid 10% transparent;
+  padding-right: 1em;
+}
+
+/* p.footer-txt {
+  font-size: .6em;
+  line-height: 1em;
+} */
+
+.footer-right {
+  flex: 2;
+  padding: 30px;
+  margin-top: -10px;
+  font-size: .7em;
+  line-height: 1.2em;
+  text-align: left;
+  display: block;
+}
+
+.footer-right p {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-logo {
+  width: 50%;
+}
+
+.faq-page {
+  background-color: #161616;
+  color: lightgray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.faq {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
