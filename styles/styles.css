@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'Wremena';
   src:
@@ -32,7 +33,7 @@ html {
 
 body {
   font-family: 'Neue Haas';
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   background-color: #ff3500;
   cursor: url('../images/cursors-02.png'), move;
 }
@@ -119,7 +120,6 @@ header {
   background-color: #ff3500;
   position: relative;
   z-index: 1000;
-  overflow-x: hidden;
   /* box-shadow: 0px 5px 25px red; */
 }
 
@@ -132,14 +132,13 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1000000;
-  /* -webkit-transform: translateZ(0); */
+  z-index: 10000;
 }
 
 .marquee-wrapper {
   background-color: #ff3500;
   padding-bottom: 5px;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .marquee span {
@@ -152,7 +151,6 @@ header {
   white-space: nowrap;
   visibility: hidden;
   animation: marquee 45s linear infinite;
-  /* overflow: hidden; */
 }
 
 .marquee-2 {
@@ -185,7 +183,6 @@ ul {
   background-color: #ff3500;
   width: 100%;
   padding-top: 2px;
-  /* -webkit-transform: translateZ(0); */
 }
 
 .product-menu:hover {
@@ -205,7 +202,7 @@ ul {
   position: relative;
   background-color: #ff3500;
   z-index: 1000;
-  width: 100%;
+  /* overflow-x: hidden; */
 }
 
 .hero-txt {
@@ -221,9 +218,7 @@ ul {
 
 .carousel {
   z-index: -100;
-  margin-bottom: -7px;
-  overflow-x: hidden;
-  /* overflow: hidden; */
+  margin-bottom: -7px;;
 }
 
 .carousel img {
@@ -290,7 +285,6 @@ p.title {
 
 .apparel-wrapper {
   background-color: #f89c1c;
-  /* overflow-x: hidden; */
 }
 
 .apparel-wrapper img:hover {
@@ -343,7 +337,6 @@ p.title {
 .conversations-wrapper {
   background-color: #161616;
   color: #ff3500;
-  /* overflow-x: hidden; */
 }
 
 .conversations-wrapper img:hover {
@@ -845,10 +838,6 @@ footer {
     font-size: 24px;
   }
 
-  .right-fix {
-    margin-top: 50px;
-  }
-
   .question p:nth-child(2) {
     line-height: 1.6em;
   }
@@ -859,7 +848,7 @@ footer {
   }
 
   p.title {
-    font-size: 3.5em;
+    font-size: 4em;
     line-height: 1.8em;
   }
 
