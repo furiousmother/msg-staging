@@ -55,6 +55,10 @@ a:hover {
   cursor: url('../images/cursors-01.png'), move;
 }
 
+.convo-wrapper a {
+  color: #eb008b;
+}
+
 .anchor {
   display: block;
   position: relative;
