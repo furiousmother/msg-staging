@@ -157,14 +157,14 @@ header {
   display: inline;
   white-space: nowrap;
   visibility: hidden;
-  animation: marquee 60s linear infinite;
+  animation: marquee 75s linear infinite;
   overflow: hidden;
 }
 
 .marquee-2 {
   white-space: nowrap;
   position: relative;
-  animation: marquee 60s linear infinite;
+  animation: marquee 75s linear infinite;
 }
 
 .marquee span {
