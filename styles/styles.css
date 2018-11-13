@@ -152,7 +152,7 @@ header {
   white-space: nowrap;
   visibility: hidden;
   animation: marquee 45s linear infinite;
-  /* overflow-x: hidden; */
+  /* overflow: hidden; */
 }
 
 .marquee-2 {
@@ -206,7 +206,7 @@ ul {
   background-color: #ff3500;
   z-index: 1000;
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .hero-txt {
@@ -223,7 +223,7 @@ ul {
 .carousel {
   z-index: -100;
   margin-bottom: -7px;
-  overflow-x: hidden;
+  /* overflow: hidden; */
 }
 
 .carousel img {
@@ -290,7 +290,7 @@ p.title {
 
 .apparel-wrapper {
   background-color: #f89c1c;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .apparel-wrapper img:hover {
@@ -343,7 +343,7 @@ p.title {
 .conversations-wrapper {
   background-color: #161616;
   color: #ff3500;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .conversations-wrapper img:hover {
