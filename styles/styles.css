@@ -682,6 +682,7 @@ footer {
   height: auto;
   color: #3a1037;
   display: flex;
+  padding: 0;
 }
 
 .footer-left {
