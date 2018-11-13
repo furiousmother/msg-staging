@@ -8,7 +8,22 @@
 @font-face {
   font-family: 'Neue Haas';
   src:
-  url('../fonts/NHaasGroteskDSStd-55Rg.otf');
+  url('../fonts/NHaasGroteskDSStd-55Rg.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'solow';
+  src:
+  url('../fonts/SoLowItalic-Web.woff') format('woff'),
+  url('../fonts/SoLowItalic-Web.woff2') format('woff2');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'solow';
+  src:
+  url('../fonts/SoLowRegular-Web.woff') format('woff'),
+  url('../fonts/SoLowRegular-Web.woff2') format('woff2');
 }
 
 html {
@@ -17,7 +32,7 @@ html {
 
 body {
   font-family: 'Neue Haas';
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   background-color: #ff3500;
   cursor: url('../images/cursors-02.png'), move;
 }
@@ -35,7 +50,7 @@ a {
 }
 
 a:hover {
-  font-family: "solow";
+  font-family: "solow", sans-serif;
   cursor: url('../images/cursors-01.png'), move;
 }
 
@@ -91,7 +106,7 @@ h6 {
   display: block;
   padding: 0;
   margin: 0;
-  font-family: 'solow', serif;
+  font-family: 'solow', sans-serif;
   font-size: .6em;
   letter-spacing: .05em;
 }
@@ -104,6 +119,7 @@ header {
   background-color: #ff3500;
   position: relative;
   z-index: 1000;
+  overflow-x: hidden;
   /* box-shadow: 0px 5px 25px red; */
 }
 
@@ -116,12 +132,14 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 10000;
+  z-index: 1000000;
+  /* -webkit-transform: translateZ(0); */
 }
 
 .marquee-wrapper {
   background-color: #ff3500;
   padding-bottom: 5px;
+  /* overflow-x: hidden; */
 }
 
 .marquee span {
@@ -129,11 +147,12 @@ header {
 }
 
 .marquee {
-  font-family: "solow";
+  font-family: 'solow', sans-serif;
   display: inline;
   white-space: nowrap;
   visibility: hidden;
   animation: marquee 45s linear infinite;
+  /* overflow: hidden; */
 }
 
 .marquee-2 {
@@ -166,6 +185,7 @@ ul {
   background-color: #ff3500;
   width: 100%;
   padding-top: 2px;
+  /* -webkit-transform: translateZ(0); */
 }
 
 .product-menu:hover {
@@ -185,7 +205,7 @@ ul {
   position: relative;
   background-color: #ff3500;
   z-index: 1000;
-  overflow-x: hidden;
+  width: 100%;
 }
 
 .hero-txt {
@@ -201,7 +221,9 @@ ul {
 
 .carousel {
   z-index: -100;
-  margin-bottom: -7px;;
+  margin-bottom: -7px;
+  overflow-x: hidden;
+  /* overflow: hidden; */
 }
 
 .carousel img {
@@ -268,6 +290,7 @@ p.title {
 
 .apparel-wrapper {
   background-color: #f89c1c;
+  /* overflow-x: hidden; */
 }
 
 .apparel-wrapper img:hover {
@@ -320,6 +343,7 @@ p.title {
 .conversations-wrapper {
   background-color: #161616;
   color: #ff3500;
+  /* overflow-x: hidden; */
 }
 
 .conversations-wrapper img:hover {
@@ -509,7 +533,7 @@ p.convo-type-2 {
 }
 
 .convo-date {
-  font-family: 'solow';
+  font-family: 'solow', sans-serif;
   font-size: .6em;
   line-height: 2em;
 }
@@ -563,7 +587,7 @@ p.convo-type-2 {
 
 .speaker {
   color: #ff3500;
-  font-family: 'solow';
+  font-family: 'solow', sans-serif;
 }
 
 .question {
@@ -635,7 +659,7 @@ p.question-2 {
 }
 
 .img-cap {
-  font-family: "solow", serif;
+  font-family: 'solow', sans-serif;
   font-size: .5em;
   margin-top: 5px;
 }
@@ -656,7 +680,7 @@ footer {
   border-right: solid 10% transparent;
   text-align: center;
   font-size: .5em;
-  font-family: "solow";
+  font-family: 'solow', sans-serif;
 }
 
 .footer-center {
@@ -821,6 +845,10 @@ footer {
     font-size: 24px;
   }
 
+  .right-fix {
+    margin-top: 50px;
+  }
+
   .question p:nth-child(2) {
     line-height: 1.6em;
   }
@@ -831,7 +859,7 @@ footer {
   }
 
   p.title {
-    font-size: 4em;
+    font-size: 3.5em;
     line-height: 1.8em;
   }
 
