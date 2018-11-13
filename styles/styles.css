@@ -135,7 +135,7 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
-  /* -webkit-transform: translateZ(0); */
+  -webkit-transform: translateZ(0);
 }
 
 .marquee-wrapper {
@@ -187,7 +187,7 @@ ul {
   background-color: #ff3500;
   width: 100%;
   padding-top: 2px;
-  /* -webkit-transform: translateZ(0); */
+  -webkit-transform: translateZ(0);
 }
 
 .product-menu:hover {
