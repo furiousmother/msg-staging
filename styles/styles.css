@@ -185,6 +185,7 @@ ul {
   background-color: #ff3500;
   width: 100%;
   padding-top: 2px;
+  -webkit-transform: translateZ(0);
 }
 
 .product-menu:hover {
@@ -205,7 +206,7 @@ ul {
   background-color: #ff3500;
   z-index: 1000;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .hero-txt {
