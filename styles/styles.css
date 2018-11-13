@@ -153,14 +153,14 @@ header {
   display: inline;
   white-space: nowrap;
   visibility: hidden;
-  animation: marquee 45s linear infinite;
+  animation: marquee 60s linear infinite;
   overflow: hidden;
 }
 
 .marquee-2 {
   white-space: nowrap;
   position: relative;
-  animation: marquee 45s linear infinite;
+  animation: marquee 60s linear infinite;
 }
 
 .marquee span {
@@ -168,7 +168,8 @@ header {
 
 @keyframes marquee {
   0% { left: 10%; }
-  100% { left: -200%; }
+  50% { left: -200%; }
+  100% { left: 10%; }
 }
 
 ul {
