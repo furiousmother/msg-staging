@@ -138,7 +138,7 @@ header {
 .marquee-wrapper {
   background-color: #ff3500;
   padding-bottom: 5px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .marquee span {
@@ -151,7 +151,7 @@ header {
   white-space: nowrap;
   visibility: hidden;
   animation: marquee 45s linear infinite;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .marquee-2 {
