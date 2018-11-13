@@ -132,13 +132,14 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 10000;
+  z-index: 1000000;
+  /* -webkit-transform: translateZ(0); */
 }
 
 .marquee-wrapper {
   background-color: #ff3500;
   padding-bottom: 5px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .marquee span {
@@ -151,7 +152,7 @@ header {
   white-space: nowrap;
   visibility: hidden;
   animation: marquee 45s linear infinite;
-  overflow-x: hidden;
+  /* overflow: hidden; */
 }
 
 .marquee-2 {
@@ -184,6 +185,7 @@ ul {
   background-color: #ff3500;
   width: 100%;
   padding-top: 2px;
+  /* -webkit-transform: translateZ(0); */
 }
 
 .product-menu:hover {
@@ -204,7 +206,7 @@ ul {
   background-color: #ff3500;
   z-index: 1000;
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .hero-txt {
@@ -221,7 +223,7 @@ ul {
 .carousel {
   z-index: -100;
   margin-bottom: -7px;
-  overflow-x: hidden;
+  /* overflow: hidden; */
 }
 
 .carousel img {
@@ -288,7 +290,7 @@ p.title {
 
 .apparel-wrapper {
   background-color: #f89c1c;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .apparel-wrapper img:hover {
@@ -341,7 +343,7 @@ p.title {
 .conversations-wrapper {
   background-color: #161616;
   color: #ff3500;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .conversations-wrapper img:hover {
