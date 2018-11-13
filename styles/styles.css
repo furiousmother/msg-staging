@@ -33,7 +33,7 @@ html {
 body {
   font-family: 'Neue Haas';
   width: 100%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   background-color: #ff3500;
   cursor: url('../images/cursors-02.png'), move;
 }
@@ -207,7 +207,7 @@ ul {
   position: relative;
   background-color: #ff3500;
   z-index: 10000000;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* width: 100%; */
   /* overflow-x: hidden;
   overflow-y: visible; */
@@ -811,14 +811,6 @@ footer {
     line-height: 1.5em;
   }
 
-  /* body {
-    overflow: auto;
-  }
-
-  .hero {
-    overflow: hidden;
-  } */
-
   .product-desc {
     font-size: .7em;
   }
@@ -862,6 +854,14 @@ footer {
 @media (max-width: 800px) {
   body {
     font-size: 24px;
+  }
+
+  body {
+    overflow: auto;
+  }
+
+  .hero {
+    overflow: hidden;
   }
 
   .right-fix {
