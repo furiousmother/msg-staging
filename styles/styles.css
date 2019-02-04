@@ -363,6 +363,10 @@ p.title {
   cursor: url('../images/cursors-01.png'), move;
 }
 
+.disclaimer {
+  font-size: .5em;
+  font-family: 'solow', sans-serif;
+}
 
 .convo-wrap {
   padding: 0 10px 10px 10px;
@@ -814,6 +818,11 @@ footer {
   p.title {
     font-size: 3.5em;
     line-height: 1.5em;
+  }
+
+  .top-logo img {
+    width: 90%;
+    height: auto;
   }
 
   .product-desc {

@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129164968-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-129164968-1');
+    </script>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="MSG + Sen Morimoto" />
+    <meta property="og:url" content="http://madewithmsg.com" />
+    <meta property="og:image" content="http://madewithmsg.com/images/sen.jpg" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.0/normalize.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
+    <script type="text/javascript" src="../js/transitions.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>MSG — Sen Morimoto</title>
   </head>
@@ -268,11 +282,16 @@
         </p>
       </div>
 
-      <div class="img-tilt-1">
-        <img src="../conversations/sen/shiatsu.jpg" style="transform:rotate(-1deg);z-index:-100;" />
-        <p class="img-cap">
-          Shiatsu – Japanese physical therapy based on the same principles as acupuncture, in which pressure is applied to certain points on the body using the hands.
-        </p>
+      <div class="img-50">
+        <div class="img-50-left">
+          <img src="../conversations/sen/shiatsu.jpg" style="transform:rotate(2deg);z-index:-100;" />
+          <p class="img-cap">
+            Shiatsu – Japanese physical therapy based on the same principles as acupuncture, in which pressure is applied to certain points on the body using the hands.
+          </p>
+        </div>
+        <div class="img-50-right">
+          <img src="../conversations/sen/shiatsu2.jpg" style="transform:rotate(-1deg);margin-top:-30px;z-index:-100;"/>
+        </div>
       </div>
 
       <div class="question">
@@ -693,13 +712,17 @@
         <p>
           Or Asian anything.
         </p>
-        <p style="display:block;" class= "speaker">
+      </div>
+
+      <div class="question">
+        <p class="speaker">
           KC
         </p>
         <p>
           It just has to be like, some sort of Asian matter.
         </p>
       </div>
+      
       <div class="answer">
         <p>
           There’s so many. Uh–not counting family, uh– not counting food…
@@ -725,7 +748,7 @@
         Sen released <a href="https://morimotosen.bandcamp.com/album/cannonball-3"><i>Cannonball! </i> </a>back in May.
         </p>
       </div>
-
+      <br /><br />
     </section>
 
     <footer>
